@@ -20,7 +20,7 @@ var pJS = function(tag_id, params){
     },
     particles: {
       number: {
-        value: 400,
+        value: 30,
         density: {
           enable: true,
           value_area: 800
@@ -39,7 +39,7 @@ var pJS = function(tag_id, params){
           nb_sides: 5
         },
         image: {
-          src: '',
+          src: 'assets/svg/plane.svg',
           width: 100,
           height: 100
         }
@@ -73,9 +73,9 @@ var pJS = function(tag_id, params){
       },
       move: {
         enable: true,
-        speed: 2,
-        direction: 'none',
-        random: false,
+        speed: 1.2,
+        direction: 'bottom',
+        random: true,
         straight: false,
         out_mode: 'out',
         bounce: false,
@@ -96,7 +96,7 @@ var pJS = function(tag_id, params){
         },
         onclick: {
           enable: true,
-          mode: 'push'
+          mode: 'repulse'
         },
         resize: true
       },
@@ -426,6 +426,11 @@ var pJS = function(tag_id, params){
 
       case 'circle':
         pJS.canvas.ctx.arc(p.x, p.y, radius, 0, Math.PI * 2, false);
+      var context = pJS.canvas.ctx.canvas.getContext("2d");
+      context.beginPath();
+      context.fillStyle = "black";
+      context.fillText("Hello World!", p.x, p.y);
+      context.fill();
       break;
 
       case 'edge':

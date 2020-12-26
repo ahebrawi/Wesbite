@@ -2,43 +2,58 @@
 Particles.
 init
 ({
-  
+
 // normal options
-  selector: 
+  selector:
 '.background'
 ,
-  maxParticles: 
-450
+  maxParticles:
+60
 ,
-  
+
 // options for breakpoints
   responsive: [
     {
       breakpoint: 5000,
       options: {
-        maxParticles: 120,
+        maxParticles: 30,
         color: '#FFFFFF',
-        connectParticles: true
+        connectParticles: true,
+        minDistance: 350,
+        speed: .25
       }
     },
     {
-      breakpoint: 768,
+      breakpoint: 1800,
       options: {
-        maxParticles: 80,
+        maxParticles: 25,
         color: '#FFFFFF',
-        connectParticles: true
+        connectParticles: true,
+        minDistance: 250,
+        speed: .2
       }
+    },
+      {
+        breakpoint: 768,
+        options: {
+          maxParticles: 10,
+          color: '#FFFFFF',
+          connectParticles: false,
+          minDistance: 50,
+          speed: .15
+        }
     }, {
       breakpoint: 425,
       options: {
-        maxParticles: 50,
-        connectParticles: true
+        maxParticles: 0,
+        connectParticles: true,
+        speed: .15
       }
     }, {
       breakpoint: 320,
       options: {
         maxParticles: 0
- 
+
 // disables particles.js
       }
     }
