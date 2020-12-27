@@ -602,7 +602,10 @@ textarea.form-control {
 }
 
 /*Mouse animate icon*/
+.scrolling-box{
 
+	scroll-behavior: smooth;
+}
 .mouse-icon {
 	position: absolute;
 	left: 50%;
@@ -615,6 +618,33 @@ textarea.form-control {
 	display: block;
 	z-index: 10;
 	opacity: 0.4;
+
+}
+.mouse-icon:hover {
+	position: absolute;
+	left: 50%;
+	bottom: 60px;
+	border: 4px solid #fff;
+	border-radius: 16px;
+	height: 50px;
+	width: 30px;
+	margin-left: -15px;
+	display: block;
+	z-index: 10;
+	opacity: 0.8;
+}
+.mouse-icon:active {
+	position: absolute;
+	left: 50%;
+	bottom: 60px;
+	border: 6px solid #fff;
+	border-radius: 56px;
+	height: 50px;
+	width: 30px;
+	margin-left: -15px;
+	display: block;
+	z-index: 10;
+	opacity: 1;
 }
 
 .mouse-icon .wheel {
