@@ -602,10 +602,7 @@ textarea.form-control {
 }
 
 /*Mouse animate icon*/
-.scrolling-box{
 
-	scroll-behavior: smooth;
-}
 .mouse-icon {
 	position: absolute;
 	left: 50%;
@@ -617,7 +614,7 @@ textarea.form-control {
 	margin-left: -15px;
 	display: block;
 	z-index: 10;
-	opacity: 0.4;
+	opacity: 0.75;
 
 }
 .mouse-icon:hover {
@@ -631,7 +628,7 @@ textarea.form-control {
 	margin-left: -15px;
 	display: block;
 	z-index: 10;
-	opacity: 0.8;
+	opacity: 0.95;
 }
 .mouse-icon:active {
 	position: absolute;
@@ -655,7 +652,7 @@ textarea.form-control {
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-play-state: running;
 	animation-name: drop;
-	animation-duration: 1s;
+	animation-duration: 1.4s;
 	animation-timing-function: linear;
 	animation-delay: 0s;
 	animation-iteration-count: infinite;
@@ -665,12 +662,16 @@ textarea.form-control {
 .mouse-icon .wheel {
 	position: relative;
 	border-radius: 10px;
-	background: #fff;
+	background: white;
 	width: 4px;
 	height: 10px;
 	top: 6px;
 	margin-left: auto;
 	margin-right: auto;
+}
+.mouse-icon:hover > .wheel{
+	background: orange;
+
 }
 
 @-webkit-keyframes drop	{
@@ -919,7 +920,7 @@ textarea.form-control {
 	list-style: outside none none;
 	margin-bottom: 20px;
 	padding: 0 10px;
-	width: 33.333%;
+	width: 25%;
 }
 .list-items-container .list-item img {
 	display: block;
