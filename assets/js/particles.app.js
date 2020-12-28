@@ -12,11 +12,13 @@ init
 ,
 
 // options for breakpoints
+
   responsive: [
     {
       breakpoint: 5000,
       options: {
-        maxParticles: 30,
+        
+        maxParticles: 80,
         color: '#FFFFFF',
         connectParticles: true,
         minDistance: 120,
@@ -26,7 +28,7 @@ init
     {
       breakpoint: 1800,
       options: {
-        maxParticles: 25,
+        maxParticles: 60,
         color: '#FFFFFF',
         connectParticles: true,
         minDistance: 100,
@@ -36,7 +38,7 @@ init
       {
         breakpoint: 768,
         options: {
-          maxParticles: 10,
+          maxParticles: 30,
           color: '#FFFFFF',
           connectParticles: false,
           minDistance: 50,
