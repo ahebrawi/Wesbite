@@ -19,7 +19,7 @@ init
         maxParticles: 30,
         color: '#FFFFFF',
         connectParticles: true,
-        minDistance: 350,
+        minDistance: 120,
         speed: .25
       }
     },
@@ -29,7 +29,7 @@ init
         maxParticles: 25,
         color: '#FFFFFF',
         connectParticles: true,
-        minDistance: 250,
+        minDistance: 100,
         speed: .2
       }
     },
