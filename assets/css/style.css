@@ -1484,11 +1484,11 @@ filter: drop-shadow(0 0 25px #d1d1d1);
 }
 .iconbox.wow.fadeInUp, .iconbox.wow.fadeInUp > .iconbox-icon, .iconbox.wow.fadeInUp > .iconbox-text.contact-section, .iconbox-text.contact-section{
 
-	-webkit-transition: all 0.5s ease-in-out;
-		 -moz-transition: all 0.5s ease-in-out;
-		 -ms-transition: all 0.5s ease-in-out;
-		 -o-transition: all 0.5s ease-in-out;
-		 transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+		 -moz-transition: all 0.25s ease-in-out;
+		 -ms-transition: all 0.25s ease-in-out;
+		 -o-transition: all 0.25s ease-in-out;
+		 transition: all 0.25s ease-in-out;
 }
 .iconbox.wow.fadeInUp:hover  .iconbox-icon{
 	color:#154b96;
@@ -1505,10 +1505,12 @@ filter: drop-shadow(0 0 25px #d1d1d1);
 }
 .phone-number:hover span.adam span{
 display: none;
+
 }
 .phone-number:hover span.adam::after{
 content: 'ADAM';
-font-size: 14px;
+font-size: 13px;
+
 }
 
 
@@ -1587,21 +1589,39 @@ font-size: 14px;
 }
 
 .scroll-up a {
-	background-color: rgba(0, 0, 0, 0.3);
-	display: block;
-	width: 28px;
-	height: 28px;
+	background-color: #154b96;
+	opacity: 0.5;
+	display:inline-block;
+	width: 35px;
+	height: 35px;
 	text-align: center;
 	color: #fff;
-	font-size: 14px;
+	font-size: 20px;
 	line-height: 30px;
 	cursor: pointer;
+	padding-top: 2px;
+	-webkit-transition: all 0.1s ease-in-out;
+		 -moz-transition: all 0.1s ease-in-out;
+		 -ms-transition: all 0.1s ease-in-out;
+		 -o-transition: all 0.1s ease-in-out;
+		 transition: all 0.1s ease-in-out;
+}
+.fas.fa-plane.fa-rotate-270{
+
+}
+.scroll-up a:hover{
+	opacity: 0.9;
+	color: white;
+	transform: scale(1.2,1.2);
 }
 
-.scroll-up a:hover,
+
+
 .scroll-up a:active {
 	background-color: rgba(235, 235, 235, .8);
 	color: #5b5963;
+	transform: scale(1.25,1.25);
+
 }
 
 
