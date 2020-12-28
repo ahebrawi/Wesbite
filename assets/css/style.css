@@ -1468,6 +1468,51 @@ figure {
 *  9. Contact and Map
 /* ---------------------------------------------- */
 
+.iconbox-text.contact-section{
+	font-size: 15px;
+	color: grey;
+}
+.iconbox-text.contact-section > .iconbox-title{
+	font-size: 18px;
+}
+.iconbox-icon {
+filter: drop-shadow(0 0 25px #d1d1d1);
+	color:#74add6;
+}
+.iconbox.wow.fadeInUp:hover{
+filter: drop-shadow(0 0 25px #d1d1d1);
+}
+.iconbox.wow.fadeInUp, .iconbox.wow.fadeInUp > .iconbox-icon, .iconbox.wow.fadeInUp > .iconbox-text.contact-section, .iconbox-text.contact-section{
+
+	-webkit-transition: all 0.5s ease-in-out;
+		 -moz-transition: all 0.5s ease-in-out;
+		 -ms-transition: all 0.5s ease-in-out;
+		 -o-transition: all 0.5s ease-in-out;
+		 transition: all 0.5s ease-in-out;
+}
+.iconbox.wow.fadeInUp:hover  .iconbox-icon{
+	color:#154b96;
+	font-size: 2.9em; /*mail icon gets bigger*/
+}
+
+.iconbox.wow.fadeInUp:hover  .iconbox-text.contact-section{
+	color:#154b96;
+	font-size: 16px;
+}
+/*phone number switch */
+.phone-number span.adam span{
+
+}
+.phone-number:hover span.adam span{
+display: none;
+}
+.phone-number:hover span.adam::after{
+content: 'ADAM';
+font-size: 14px;
+}
+
+
+
 #map-section {
 	position: relative;
 	height: 450px;
