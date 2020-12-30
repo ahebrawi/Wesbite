@@ -85,10 +85,6 @@ $('.testimonials').owlCarousel({
 /* ---------------------------------------------- */
 
 
-$('.simple-ajax-popup').magnificPopup({
-	type: 'image',
-	gallery:{enabled:true}
-});
 $('#filter li').on('click', function (e) {
 	e.preventDefault();
 
