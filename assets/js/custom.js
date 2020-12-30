@@ -1,6 +1,6 @@
 (function($){
 
-	"use strict"; 
+	"use strict";
 
 /* ---------------------------------------------- /*
 * Preloader
@@ -84,8 +84,11 @@ $('.testimonials').owlCarousel({
 * Initialize shuffle plugin
 /* ---------------------------------------------- */
 
-var $portfolioContainer = $('.list-items-container');
 
+$('.simple-ajax-popup').magnificPopup({
+	type: 'image',
+	gallery:{enabled:true}
+});
 $('#filter li').on('click', function (e) {
 	e.preventDefault();
 

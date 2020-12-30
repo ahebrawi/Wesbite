@@ -17,8 +17,8 @@ init
     {
       breakpoint: 5000,
       options: {
-        
-        maxParticles: 80,
+
+        maxParticles: 50,
         color: '#FFFFFF',
         connectParticles: true,
         minDistance: 120,
@@ -28,7 +28,7 @@ init
     {
       breakpoint: 1800,
       options: {
-        maxParticles: 60,
+        maxParticles: 40,
         color: '#FFFFFF',
         connectParticles: true,
         minDistance: 100,
@@ -38,7 +38,7 @@ init
       {
         breakpoint: 768,
         options: {
-          maxParticles: 30,
+          maxParticles: 10,
           color: '#FFFFFF',
           connectParticles: false,
           minDistance: 50,
