@@ -941,7 +941,7 @@ figure {
 	position: relative;
 }
 .list-items-container .list-item figcaption {
-	background: rgba(196, 139, 26);
+	background: rgb(40 103 178);
 	background: -moz-linear-gradient(45deg, rgba(36, 60, 99) 0%, rgba(76, 102, 145) 100%);
 	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(36, 60, 99)), color-stop(100%, rgba(76, 102, 145)));
 	background: -webkit-linear-gradient(45deg, rgba(36, 60, 99) 0%, rgba(76, 102, 145) 100%);
@@ -957,10 +957,9 @@ figure {
 	right: 8px;
 	text-align: center;
 	top: 8px;
-	transform: scale(1.1);
-	transition: all 0.3s ease 0s;
+	transform: scale(0.6);
+	transition: all 0.6s ease 0s;
 }
-
 .list-items-container .list-item a {
 	font-size: 0;
 	height: 100%;
