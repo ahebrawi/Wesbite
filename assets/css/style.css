@@ -99,10 +99,22 @@ a,
 
 h1, h2, h3, h4, h5, h6 {
 	font: 700 40px/1.2 'Poppins', sans-serif;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	letter-spacing: 5px;
 	margin: 5px 0 5px;
 	color: #5b5963;
+	font-weight: 300;
+}
+.adam{
+font-size: 25px;
+}
+span .adam{
+	font-size: 15px;
+}
+
+.txt-rotate{
+
+	font-weight: 700;
 }
 
 h2 {
@@ -595,7 +607,7 @@ textarea.form-control {
 
 .hello,
 .who-creates {
-	font-size: 16px;
+	font-size: 20px;
 	text-transform: none;
 	margin: 15px 0;
 	font-weight: 200;
@@ -921,9 +933,21 @@ textarea.form-control {
 		display: block;
     margin-left: auto;
     margin-right: auto;
-		
 		max-width: 1600px;
-
+	}
+	#about{
+		margin-left: auto;
+    margin-right: auto;
+		max-width: 1600px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.list-items-container {
+		display: block;
+    margin-left: auto;
+    margin-right: auto;
+		width: 65%;
+		max-width: 350px;
 	}
 }
 

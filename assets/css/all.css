@@ -4189,7 +4189,16 @@ readers do not read off random characters that represent icons */
   margin: 0;
   overflow: visible;
   position: static;
-  width: auto; }
+  width: auto;
+}
+@font-face {
+    font-family: 'arcon';
+    src: url("../webfonts/arcon-regular-webfont.woff2") format("woff2");
+    src: url("../webfonts/arcon-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
 @font-face {
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
