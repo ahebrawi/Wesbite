@@ -923,10 +923,24 @@ textarea.form-control {
 	position:relative;
 	display: block;
 	padding: 0;
-	margin: 0;
-	align-self: center;
-	align-items: center;
+	margin: 50px;
 
+}
+.list-items-container .list-item {
+	display: block;
+	list-style: outside none none;
+	margin-bottom: 20px;
+	padding: 0 10px;
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.list-items-container .list-item img {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 @media only screen and (min-width: 1600px) {
 	.list-items-container {
@@ -941,27 +955,56 @@ textarea.form-control {
 		max-width: 1600px;
 	}
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1400px) { /*  FROM 4 TO 3-- 1400px to 1150px */
+	.list-items-container .list-item{
+		display: block;
+    margin-left: auto;
+    margin-right: auto;
+		width: 33.3333%;
+
+	}
+	.list-items-container {
+		display: block;
+		margin-left: auto;
+    margin-right: auto;
+		max-width: 1050px;
+
+
+	}
+}
+@media only screen and (max-width: 1150px) { /*  FROM 3 TO 2  1150px */
+	.list-items-container .list-item{
+		display: block;
+    margin-left: auto;
+    margin-right: auto;
+		width: 100%;
+		max-width: 350px;
+
+	}
 	.list-items-container {
 		display: block;
     margin-left: auto;
     margin-right: auto;
-		width: 65%;
-		max-width: 350px;
+		max-width: 700px;
+
 	}
 }
+@media only screen and (max-width: 768px) { /*  FROM 2 TO 1  768px and below*/
+	.list-items-container .list-item{
+		display: block;
+    margin-left: auto;
+    margin-right: auto;
+		width: 100%;
+		max-width: 380px;
 
-.list-items-container .list-item {
-	display: block;
-	list-style: outside none none;
-	margin-bottom: 20px;
-	padding: 0 10px;
-	width: 25%;
-}
-.list-items-container .list-item img {
-	display: block;
-	width: 100%;
-	height: auto;
+	}
+	.list-items-container {
+		display: block;
+    margin-left: auto;
+    margin-right: auto;
+		max-width: 380px;
+
+	}
 }
 
 .list-items-container .list-item {
