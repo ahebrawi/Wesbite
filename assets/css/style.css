@@ -923,7 +923,11 @@ textarea.form-control {
 	position:relative;
 	display: block;
 	padding: 0;
-	margin: 50px;
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1600px;
 
 }
 .list-items-container .list-item {
@@ -942,18 +946,16 @@ textarea.form-control {
 	margin-left: auto;
 	margin-right: auto;
 }
-@media only screen and (min-width: 1600px) {
+#about{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1600px;
+}
+@media only screen and (max-width: 1650px) {
 	.list-items-container {
-		display: block;
-    margin-left: auto;
-    margin-right: auto;
-		max-width: 1600px;
+		margin: 0px 20px;
 	}
-	#about{
-		margin-left: auto;
-    margin-right: auto;
-		max-width: 1600px;
-	}
+
 }
 @media only screen and (max-width: 1400px) { /*  FROM 4 TO 3-- 1400px to 1150px */
 	.list-items-container .list-item{
