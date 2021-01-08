@@ -1245,12 +1245,56 @@ figure {
 
 .iconboxleft-icon {
 	position: absolute;
+
 	width: 55px;
 	left: 0;
 	top: 0;
 	font-size: 32px;
 	line-height: 1;
-	color: rgba(253,115,90,1);
+	color: rgb(116 173 214);
+
+}
+
+.iconboxleft-icon, .iconboxleft-title, #me{
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	-moz-transition: all 0.5s ease-in-out 0s;
+	-ms-transition: all 0.5s ease-in-out 0s;
+	-o-transition: all 0.5s ease-in-out 0s;
+	transition: all 0.5s ease-in-out 0s;
+
+}
+
+.iconboxleft:hover  #me{
+	display: inline-block;
+	color: rgb(40 103 178);
+	transform: rotate(360deg);
+}
+
+.iconboxleft-title{
+	width: 0;
+	text-align: center;
+	white-space: nowrap;
+	letter-spacing: 1.5px;/*darker blue on hover*/
+}
+.iconboxleft:hover  .iconboxleft-title{
+	text-align: center;
+	width: 100%;
+	color: rgb(40 103 178);
+	letter-spacing: 3px;
+}
+@media (max-width: 1150px) {
+.iconboxleft:hover  .iconboxleft-title{
+	text-align: center;
+	letter-spacing: 1.5px;
+}
+}
+.iconboxleft:hover  .iconboxleft-title{
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	-moz-transition: all 0.5s ease-in-out 0s;
+	-ms-transition: all 0.5s ease-in-out 0s;
+	-o-transition: all 0.5s ease-in-out 0s;
+	transition: all 0.5s ease-in-out 0s;
+
 }
 
 .iconboxleft-text {
@@ -1565,15 +1609,16 @@ filter: drop-shadow(0 0 25px #d1d1d1);
 }
 .iconbox.wow.fadeInUp, .iconbox.wow.fadeInUp > .iconbox-icon, .iconbox.wow.fadeInUp > .iconbox-text.contact-section, .iconbox-text.contact-section{
 
-	-webkit-transition: all 0.15s ease-in-out;
-		 -moz-transition: all 0.15s ease-in-out;
-		 -ms-transition: all 0.15s ease-in-out;
-		 -o-transition: all 0.15s ease-in-out;
-		 transition: all 0.15s ease-in-out;
+	-webkit-transition: all 0.35s ease-in-out;
+		 -moz-transition: all 0.35s ease-in-out;
+		 -ms-transition: all 0.35s ease-in-out;
+		 -o-transition: all 0.35s ease-in-out;
+		 transition: all 0.35s ease-in-out;
 }
 .iconbox.wow.fadeInUp:hover  .iconbox-icon{
 	color:#154b96;
-	font-size: 2.9em; /*mail icon gets bigger*/
+	transform: rotate(360deg);
+	font-size: 3.2em; /*mail icon gets bigger*/
 }
 
 .iconbox.wow.fadeInUp:hover  .iconbox-text.contact-section{
