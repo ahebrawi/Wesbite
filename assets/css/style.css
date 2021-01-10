@@ -99,7 +99,7 @@ a,
 
 h1, h2, h3, h4, h5, h6 {
 	font: 700 40px/1.2 'Poppins', sans-serif;
-	/*text-transform: uppercase;*/
+	text-transform: uppercase;
 	letter-spacing: 5px;
 	margin: 5px 0 5px;
 	color: #5b5963;
@@ -144,7 +144,9 @@ h6 {
 	letter-spacing: 1px;
 	font-weight: 400;
 }
-
+.intro h1{
+	text-transform: none;
+}
 /*** Reset border-radius ***/
 
 .btn,
@@ -852,7 +854,9 @@ textarea.form-control {
 	color: #fff;
 	outline: 0 none;
 }
-
+.navbar-custom .navbar-nav > li:hover a{
+	background: rgb(178 191 210);
+}
 .navbar-custom .navbar-brand {
 	font-weight: 700;
 	font-size: 18px;
@@ -1013,7 +1017,7 @@ textarea.form-control {
 	}
 }
 
-.list-items-container .list-item {
+.list-items-container .list-item, .list-items-container .list-item img, .list-items-container .list-item figcaption .caption-inner {
 	-webkit-transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
 	-moz-transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
 	-ms-transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
@@ -1025,25 +1029,39 @@ figure {
 	overflow: hidden;
 	position: relative;
 }
+
 .list-items-container .list-item figcaption {
-	background: rgb(40 103 178);
-	background: -moz-linear-gradient(45deg, rgba(36, 60, 99) 0%, rgba(76, 102, 145) 100%);
-	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(36, 60, 99)), color-stop(100%, rgba(76, 102, 145)));
-	background: -webkit-linear-gradient(45deg, rgba(36, 60, 99) 0%, rgba(76, 102, 145) 100%);
-	background: -o-linear-gradient(45deg, rgba(36, 60, 99) 0%, rgba(76, 102, 145) 100%);
-	background: -ms-linear-gradient(45deg, rgba(36, 60, 99) 0%, rgba(76, 102, 145) 100%);
-	background: linear-gradient(45deg, rgba(36, 60, 99) 0%, rgba(76, 102, 145) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa1f55', endColorstr='#fd735a', GradientType=1 );
-	bottom: 8px;
-	left: 8px;
+	/*background: rgb(40 103 178);
+	background: -moz-linear-gradient(45deg, rgba(48 63 88 ) 0%, rgba(88 168 206) 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(48 63 88)), color-stop(100%, rgba(88 168 206)));
+	background: -webkit-linear-gradient(45deg, rgba(48 63 88) 0%, rgba(88 168 206) 100%);
+	background: -o-linear-gradient(45deg, rgba(48 63 88) 0%, rgba(88 168 206) 100%);
+	background: -ms-linear-gradient(45deg, rgba(48 63 88) 0%, rgba(88 168 206) 100%);
+	background: linear-gradient(45deg, rgb(74 105 158 / 70%) 0%, rgb(138 255 244 / 50%) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgb(48 63 88)', endColorstr='rgb(88 168 206)', GradientType=1 );*/
+	bottom: 0px;
+	left: 0px;
 	opacity: 0;
 	padding: 25px;
 	position: absolute;
-	right: 8px;
+	right: 0px;
 	text-align: center;
-	top: 8px;
-	transform: scale(0.6);
-	transition: all 0.6s ease 0s;
+	top: 0px;
+	/*transform: scale(0.4);*/
+	transition: all 0.5s ease 0s;
+}
+.list-items-container .list-item figcaption .caption-inner{ /*ONLY TEXT ZOOMS OB HOVER*/
+	/*background-color: red;
+	color: red;*/
+	transform: scale(0.4);
+	filter:blur(2px);
+
+}
+.list-items-container .list-item figcaption:hover > .caption-inner{ /*ONLY TEXT ZOOMS OB HOVER*/
+	/*background-color: red;
+	color: red;*/
+	transform: scale(1);
+	filter: blur(0px);
 }
 .list-items-container .list-item a {
 	font-size: 0;
@@ -1063,27 +1081,42 @@ figure {
 	top: 50%;
 	width: 100%;
 	margin-top: -20px;
+
 }
 
 .caption-inner .portfolio-item-title {
 	color: #fff;
-	font-size: 16px;
+	font-size: 25px;
 	font-weight: 400;
+
+
 }
 
 .caption-inner .portfolio-item-desc {
 	color: #ddd;
 	font-size: 13px;
 	font-style: italic;
+	padding: 10px;
 }
 
 .list-items-container .list-item:hover figcaption {
-	opacity: 1;
-	-webkit-transform: scale(.97);
-	-moz-transform: scale(.97);
-	-ms-transform: scale(.97);
-	-o-transform: scale(.97);
-	transform: scale(.97);
+	opacity: 0.8;
+	background-color: rgba(0, 0, 0, 0.7);
+	-webkit-transform: scale(1.00);
+	-moz-transform: scale(1.00);
+	-ms-transform: scale(1.00);
+	-o-transform: scale(1.00);
+	transform: scale(1.00);
+}
+.list-items-container .list-item:hover img { /*IMAGE GETS BIGGER WHEN HOVERED PORTOFLIO	*/
+	opacity: 0.8;
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	-ms-transform: scale(1.4);
+	-o-transform: scale(1.4);
+	transform: scale(1.4);
+	filter: blur(1.5px);
+  -webkit-filter: blur(1.5px);
 }
 
 /* Ajax portfolio */
@@ -1258,7 +1291,7 @@ figure {
 
 }
 
-.iconboxleft-icon, .iconboxleft-title, #me{
+.iconboxleft-icon, .iconboxleft-title, #me, .col-sm-4 .iconbox-title{
 	-webkit-transition: all 0.5s ease-in-out 0s;
 	-moz-transition: all 0.5s ease-in-out 0s;
 	-ms-transition: all 0.5s ease-in-out 0s;
@@ -1272,7 +1305,16 @@ figure {
 	color: rgb(40 103 178);
 	transform: rotate(360deg);
 }
-
+.iconbox-title{
+	/*text-transform: none;*/
+}
+.iconbox:hover{
+	/*background-color: #f5fafc;*/
+}
+.col-sm-4:hover  .iconbox-title{ /*MAKE SKILLS TEXT TURN BLUE ON OX HOVER*/
+	color:rgb(40 103 178);
+	letter-spacing: 2px;
+}
 .iconboxleft-title{
 	width: 0;
 	text-align: center;
@@ -1735,13 +1777,22 @@ font-size: 13px;
 		 -o-transition: all 0.1s ease-in-out;
 		 transition: all 0.1s ease-in-out;
 }
-.fas.fa-plane.fa-rotate-270{
-
+.fas.fa-plane{
+	transform: rotate(-90deg);
+	-webkit-transition: all 0.45s ease-in-out;
+		 -moz-transition: all 0.45s ease-in-out;
+		 -ms-transition: all 0.45s ease-in-out;
+		 -o-transition: all 0.45s ease-in-out;
+		 transition: all 0.45s ease-in-out;
+}
+.scroll-up a:hover > .fas.fa-plane{
+transform: rotate(270deg);
 }
 .scroll-up a:hover{
 	opacity: 0.9;
 	color: white;
 	transform: scale(1.2,1.2);
+
 }
 
 
