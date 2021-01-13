@@ -51,6 +51,10 @@ body {
 	opacity: .5;
 
 }
+.portfolio-item-desc-adobe{
+	display: none;
+	width: 5px;
+}
 img{
 	-moz-user-select: none;
 -webkit-user-select: none;
@@ -1108,9 +1112,8 @@ figure {
 	font-size: 22px;
 	font-weight: 300;
 	padding: 0px 10px;
-
-
 }
+
 
 .caption-inner .portfolio-item-desc {
 
@@ -1118,6 +1121,11 @@ figure {
 	font-size: 13px;
 	font-style: italic;
 	padding: 10px;
+}
+@media (max-width: 1150px) {
+	.caption-inner .portfolio-item-desc { /*more space for text when boxes get smaller*/
+		margine-top:-10%;
+	}
 }
 
 .list-items-container .list-item:hover figcaption {
