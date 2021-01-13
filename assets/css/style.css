@@ -946,7 +946,6 @@ textarea.form-control {
 	position:relative;
 	display: block;
 	padding: 0;
-
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -963,6 +962,7 @@ textarea.form-control {
 	width: 25%;
 	margin-left: auto;
 	margin-right: auto;
+	max-width: 400px;
 }
 .list-items-container .list-item img {
 	display: block;
@@ -988,6 +988,7 @@ textarea.form-control {
     margin-left: auto;
     margin-right: auto;
 		width: 33.3333%;
+		max-width: 400px;
 
 	}
 	.list-items-container {
@@ -999,7 +1000,7 @@ textarea.form-control {
 
 	}
 }
-@media only screen and (max-width: 1150px) { /*  FROM 3 TO 2  1150px */
+@media only screen and (max-width: 900px) { /*  FROM 3 TO 2  1150px */
 	.list-items-container .list-item{
 		display: block;
     margin-left: auto;
@@ -2011,9 +2012,9 @@ transform: rotate(270deg);
 		height: 300px;
 	}
 
-	.list-items-container .list-item {
+	/*.list-items-container .list-item {
 		width: 50%;
-	}
+	}*/
 
 	.white-popup-block {
 		margin: 80px auto;
