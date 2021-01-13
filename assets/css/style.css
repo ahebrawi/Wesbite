@@ -99,7 +99,7 @@ a,
 
 h1, h2, h3, h4, h5, h6 {
 	font: 700 40px/1.2 'Poppins', sans-serif;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	letter-spacing: 5px;
 	margin: 5px 0 5px;
 	color: #5b5963;
@@ -1088,13 +1088,15 @@ figure {
 
 .caption-inner .portfolio-item-title {
 	color: #fff;
-	font-size: 25px;
-	font-weight: 400;
+	font-size: 22px;
+	font-weight: 300;
+	padding: 0px 10px;
 
 
 }
 
 .caption-inner .portfolio-item-desc {
+
 	color: #ddd;
 	font-size: 13px;
 	font-style: italic;
