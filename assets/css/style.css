@@ -1741,12 +1741,12 @@ font-size: 13px;
 /* ---------------------------------------------- /*
 *  10. Footer
 /* ---------------------------------------------- */
-
+div#preload { display: none; }
 #footer {
 	text-align: center;
 	padding: 40px 0;
 	color: #FFF;
-	background: #333
+	background: #333;
 }
 
 .copyright {
