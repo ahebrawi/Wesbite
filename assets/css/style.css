@@ -45,7 +45,22 @@ body {
 	color: #5b5963;
 	overflow-x: hidden;
 }
+.adobe{
+	max-width: 21px;
+	margin: 0px 2px;
+	opacity: .5;
 
+}
+img{
+	-moz-user-select: none;
+-webkit-user-select: none;
+user-select: none;
+user-drag:none;
+}
+.adobe:hover{
+	transform: scale(1.6);
+	opacity: 1;
+}
 img {
 	max-width: 100%;
 	height: auto;
@@ -76,7 +91,7 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 a,
-.btn {
+.btn, .adobe{
 	-webkit-transition: all 0.125s ease-in-out 0s;
 	-moz-transition: all 0.125s ease-in-out 0s;
 	-ms-transition: all 0.125s ease-in-out 0s;
@@ -1292,6 +1307,10 @@ figure {
 	position: relative;
 	margin: 0 0 50px;
 }
+.iconboxleft-desc{
+	font-size: 13px;
+
+}
 
 .iconboxleft-icon {
 	position: absolute;
@@ -1340,6 +1359,9 @@ figure {
 	width: 100%;
 	color: rgb(40 103 178);
 	letter-spacing: 3px;
+}
+.iconboxleft:hover .adobe{
+	opacity: 1;
 }
 @media (max-width: 1150px) {
 .iconboxleft:hover  .iconboxleft-title{
