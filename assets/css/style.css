@@ -894,8 +894,9 @@ height: 50px;
 #resume a:hover{
 font-size: 8px;
 letter-spacing: -10px;
-background-color: white;
-color: white;
+background-color: #ecf5ff;
+
+color: #ecf5ff;
 width:60px;
 
 }
