@@ -877,6 +877,59 @@ textarea.form-control {
 .navbar-custom .navbar-nav > li:hover a{
 	background: rgb(178 191 210);
 }
+/*                RESUME BOTTON FADE TEXT AND BRING IN ICON                              */
+#resume a{
+	/* JS will displayb none her when using mobile dropdown menu*/
+border-width: 1px;
+border-color: #7c7d8073;
+color: #2867B2;
+background-color: rgb(108 142 193 / 0%);
+border-style: none solid none solid;
+font-size: 12px;
+text-align: center;
+margin-right: 4px;
+width:100px;
+height: 50px;
+}
+#resume a:hover{
+font-size: 8px;
+letter-spacing: -10px;
+background-color: white;
+color: white;
+width:60px;
+
+}
+
+#resume-icon{
+	position:absolute;
+	font-size: 20px;
+	color: #ffffff00;
+	left:40%;
+}
+#resume a:hover  #resume-icon{
+	font-size: 20px;
+	left:40%;
+	color:#2867B2;
+}
+#resume a:active  #resume-icon{
+	font-size: 20px;
+	left:40%;
+	color:white;
+}
+#resume a:active{
+	background-color: black;
+	color: black;
+}
+@media screen and (max-width: 767px) {/* hides the fancy resume button when in mobile mode*/
+    #resume {
+        display: none;
+    }
+}
+@media screen and (min-width: 767px) {/* hides the list resume button when in desktop mode*/
+    #list-resume {
+        display: none;
+    }
+}
 .navbar-custom .navbar-brand {
 	font-weight: 700;
 	font-size: 18px;
@@ -917,7 +970,7 @@ textarea.form-control {
 	padding: 0;
 }
 
-#filter li {
+#filter li{
 	background: #f5f5f5;
 	    display: inline-block;
 	    font: 400 13px/1.2 'Poppins', sans-serif;
@@ -1334,7 +1387,7 @@ figure {
 
 }
 
-.iconboxleft-icon, .iconboxleft-title, #me, .col-sm-4 .iconbox-title, .list-item.motion figure .static{
+.iconboxleft-icon, .iconboxleft-title, #me, .col-sm-4 .iconbox-title, .list-item.motion figure .static, #resume-icon{
 	-webkit-transition: all 0.5s ease-in-out 0s;
 	-moz-transition: all 0.5s ease-in-out 0s;
 	-ms-transition: all 0.5s ease-in-out 0s;
