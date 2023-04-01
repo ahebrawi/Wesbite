@@ -125,10 +125,10 @@ h1, h2, h3, h4, h5, h6 {
 	color: #5b5963;
 	font-weight: 300;
 }
-.adam{
+.RUPE{
 font-size: 25px;
 }
-span .adam{
+span .RUPE{
 	font-size: 15px;
 }
 
@@ -1770,15 +1770,15 @@ filter: drop-shadow(0 0 25px #d1d1d1);
 	font-size: 16px;
 }
 /*phone number switch */
-.phone-number span.adam span{
+.phone-number span.RUPE span{
 
 }
-.phone-number:hover span.adam span{
+.phone-number:hover span.RUPE span{
 display: none;
 
 }
-.phone-number:hover span.adam::after{
-content: 'ADAM';
+.phone-number:hover span.RUPE::after{
+content: 'RUPE';
 font-size: 13px;
 
 }
