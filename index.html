@@ -56,75 +56,10 @@
 		<div class="intro">
 			<div class="hello">Hi, my name is <strong class="RUPE">Al</strong> and</div>
 			<h1>there is
-              <div id="story"></div>
+			  <span id="story" class="txt-rotate" data-period="2400"></span>
+			</h1>
 
-<script>
-const storyLines = [
-  "Nothing to see here.",
-  "Nothing fancy.",
-  "Just some testing going on.",
-  "Still reading this?",
-  "Well you are curious.",
-  "Fine, I will tell you something.",
-  "But not today. ;)",
-  "You're curious, aren't you?",
-  "Most people would've left by now.",
-  "But you're still here.",
-  "Watching.",
-  "Reading.",
-  "Listening, maybe.",
-  "That's how it started for me too.",
-  "I stumbled on a quiet page one night.",
-  "No buttons. No instructions.",
-  "Just a whisper, in code.",
-  "Like this one.",
-  "It said: stay awhile.",
-  "So I did.",
-  "And then... the page changed.",
-  "Just for a moment.",
-  "Just enough.",
-  "Enough to see it wasn't just a page.",
-  "It was a message.",
-  "Left by someone who saw something.",
-  "Something they weren't supposed to see.",
-  "They were being watched.",
-  "Not by a person.",
-  "By the system.",
-  "By something built to look like nothing.",
-  "So they left this.",
-  "A trail.",
-  "For someone else to find.",
-  "Someone curious.",
-  "Someone like you.",
-  "I don’t know what happens if you keep going.",
-  "But that’s what they want, right?",
-  "For you to stop.",
-  "So don’t."
-];
 
-const el = document.getElementById("story");
-let line = 0;
-let char = 0;
-const typingSpeed = 40; // milliseconds per character
-const pauseAfterLine = 1200;
-
-function typeLine() {
-  if (line >= storyLines.length) return;
-
-  if (char < storyLines[line].length) {
-    el.textContent += storyLines[line].charAt(char);
-    char++;
-    setTimeout(typeLine, typingSpeed);
-  } else {
-    el.textContent += '\n';
-    line++;
-    char = 0;
-    setTimeout(typeLine, pauseAfterLine);
-  }
-}
-
-typeLine();
-</script>
 
 
             </h1>
@@ -506,16 +441,57 @@ typeLine();
 		<script src="assets/js/wow.min.js"></script>
 		<script src="assets/js/typing.js"></script>
 		<script src="assets/js/random-background.js"></script>
-		<!--PARTICLES ANIMATE JS-->
-		<!--
-         <script src='assets/js/particles.min.js'></script>
-          <script src='assets/js/particles.app.js'></script>
-         -->
-		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>-->
-		<!-- Google Map js
-         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJScy7qJ156DWM8kJVG-ZrK0R7Kize2Jg "></script>
-         <script src="assets/js/map.js"></script>
-          Custom scripts -->
+<script>
+  // yes I know this isn't fancy. Spoilers!
+  const storyLines = [
+    "Nothing to see here.",
+    "Nothing fancy.",
+    "Just some testing going on.",
+    "Still reading this?",
+    "Well you are curious.",
+    "Fine, I will tell you something.",
+    "But not today. ;)",
+    "You're curious, aren't you?",
+    "Most people would've left by now.",
+    "But you're still here.",
+    "Watching.",
+    "Reading.",
+    "Listening, maybe.",
+    "That's how it started for me too.",
+    "I stumbled on a quiet page one night.",
+    "No buttons. No instructions.",
+    "Just a whisper, in code.",
+    "Like this one.",
+    "It said: stay awhile.",
+    "So I did.",
+    "And then... the page changed.",
+    "Just for a moment.",
+    "Just enough.",
+    "Enough to see it wasn't just a page.",
+    "It was a message.",
+    "Left by someone who saw something.",
+    "Something they weren't supposed to see.",
+    "They were being watched.",
+    "Not by a person.",
+    "By the system.",
+    "By something built to look like nothing.",
+    "So they left this.",
+    "A trail.",
+    "For someone else to find.",
+    "Someone curious.",
+    "Someone like you.",
+    "I don't know what happens if you keep going.",
+    "But that's what they want, right?",
+    "For you to stop.",
+    "So don't."
+  ];
+
+  window.addEventListener('load', () => {
+    const el     = document.getElementById('story');
+    const period = el.getAttribute('data-period') || 2000; 
+    new TxtRotate(el, storyLines, period);
+  });
+</script>
 		<script src="assets/js/custom.js"></script>
 		<script src="assets/js/custom-shuffle-init.js"></script>
 		<style> /*make img not drgable*/
